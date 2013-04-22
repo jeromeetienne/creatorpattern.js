@@ -1,0 +1,34 @@
+<!doctype html>
+<body><h1>Open your js console</h1>
+<script src='../creatorpattern.js'></script>
+<script>
+	// declare an simple example class
+	var Something	= function(a, b){
+		this._foo	= 'bar'+(a+b)
+	}
+	Something.prototype.getFoo	= function(){
+		return this._foo
+	}
+
+	// used with a specified name
+	mixinCreatorPattern(Something, 'Something')
+	// mixinCreatorPattern(Something)
+
+	var something	= Something.create(2,1)
+
+	// sanity check
+	console.assert(something instanceof Something)
+	console.assert(something.getFoo() === 'bar3');
+
+	// log the result
+	console.log('foo is', something.getFoo());
+	console.dir(something);
+
+/**
+ * * make an actual post for that
+ *   * what are the advantages ?
+ *   * can it be possible to handle object pool ?
+ * * some mocha tests
+ * * submit to microlib stuff
+ */
+</script></body>

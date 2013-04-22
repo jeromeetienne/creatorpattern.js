@@ -27,4 +27,5 @@ var mixinCreatorPattern	= function(klass, name){
 };
 
 // export for node.js
-if( window === undefined )	module.exports	= mixinCreatorPattern;
+if( typeof(window) === 'undefined' )	module.exports	= mixinCreatorPattern;
+
