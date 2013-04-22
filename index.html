@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Creatorpattern.js : microlib to easily add the creator pattern to your class." />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Creatorpattern.js</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/jeromeetienne/creatorpattern.js">View on GitHub</a>
+
+          <h1 id="project_title">Creatorpattern.js</h1>
+          <h2 id="project_tagline">microlib to easily add the creator pattern to your class.</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/jeromeetienne/creatorpattern.js/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/jeromeetienne/creatorpattern.js/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>creatorpattern.js</h1>
+
+<p>microlib to easily add the creator pattern to your class.
+It works in browser and node.js</p>
+
+<h2>how to use it</h2>
+
+<p>in node.js</p>
+
+<pre><code>var mixinCreatorPattern = require('creatorpattern');
+mixinCreatorPattern(FooClass, 'FooClass')
+</code></pre>
+
+<p>in your browser</p>
+
+<pre><code>mixinCreatorPattern(FooClass, 'FooClass')
+</code></pre>
+
+<h2>how to include it</h2>
+
+<p>in node.js</p>
+
+<pre><code> npm install creatorpattern.js
+</code></pre>
+
+<p>in your browser</p>
+
+<pre><code> &lt;script src='creatorpattern.js'&gt;&lt;/script&gt;
+</code></pre>
+
+<h2>api</h2>
+
+<p>It includes a single function <code>mixinCreatorPattern(constructorFunction, nameOfClass)</code></p>
+
+<pre><code>mixinCreatorPattern(FooClass, 'FooClass')
+</code></pre>
+
+<ul>
+<li>the first parameter <code>FooClass</code> is the contructor of your class.</li>
+<li>The second parameter <code>'FooClass'</code> is optional and is the name of the class in string.
+It does its best to keep the name of the class. Thus 
+when you display your variables in the js console, you will see the
+proper name.
+If the name isn't provided, it will take the function name of the
+constructor function. If there is none, the name won't be kept</li>
+</ul>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Creatorpattern.js maintained by <a href="https://github.com/jeromeetienne">jeromeetienne</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
