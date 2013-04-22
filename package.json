@@ -1,0 +1,20 @@
+{
+  "name": "creatorpattern.js",
+  "version": "0.0.0",
+  "description": "microlib to easily add the creator pattern to your class.",
+  "main": "creatorpattern.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jeromeetienne/creatorpattern.js.git"
+  },
+  "keywords": [
+    "microlib",
+    "creator",
+    "pattern"
+  ],
+  "author": "Jerome Etienne",
+  "license": "MIT"
+}
