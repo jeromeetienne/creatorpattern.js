@@ -39,9 +39,12 @@ in your browser
 It includes a single function ```mixinCreatorPattern(constructorFunction, nameOfClass)```
 
 
-```mixinCreatorPattern(FooClass, 'FooClass')```
-the first parameter is the contructor of your class.
-The second parameter is optional and is the name of the class in string.
+```
+mixinCreatorPattern(FooClass, 'FooClass')
+```
+
+* the first parameter ```FooClass``` is the contructor of your class.
+* The second parameter ```'FooClass'``` is optional and is the name of the class in string.
 It does its best to keep the name of the class. Thus 
 when you display your variables in the js console, you will see the
 proper name.
