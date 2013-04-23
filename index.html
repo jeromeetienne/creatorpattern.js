@@ -33,23 +33,33 @@
       <section id="main_content" class="inner">
         <h1>creatorpattern.js</h1>
 
-<p>microlib to easily add the creator pattern to your class.
+<p>Micro Library to easily add the creator pattern to your class.
 It works in browser and node.js</p>
 
-<h2>how to use it</h2>
+<h2>How To Use It</h2>
 
-<p>in node.js</p>
+<p>to mixin the creator pattern in a class ``<code>FooClass</code>, do the following in node.js</p>
 
 <pre><code>var mixinCreatorPattern = require('creatorpattern');
 mixinCreatorPattern(FooClass, 'FooClass')
 </code></pre>
 
-<p>in your browser</p>
+<p>or do the following in your browser</p>
 
 <pre><code>mixinCreatorPattern(FooClass, 'FooClass')
 </code></pre>
 
-<h2>how to include it</h2>
+<p>After that, <code>FooClass</code> honor the creator pattern. so instead of</p>
+
+<pre><code>var foo = new FooClass(2,1)
+</code></pre>
+
+<p>you can do </p>
+
+<pre><code>var foo = FooClass.create(2,1);
+</code></pre>
+
+<h2>How To Include It</h2>
 
 <p>in node.js</p>
 
@@ -61,7 +71,7 @@ mixinCreatorPattern(FooClass, 'FooClass')
 <pre><code> &lt;script src='creatorpattern.js'&gt;&lt;/script&gt;
 </code></pre>
 
-<h2>api</h2>
+<h2>API</h2>
 
 <p>It includes a single function <code>mixinCreatorPattern(constructorFunction, nameOfClass)</code></p>
 
