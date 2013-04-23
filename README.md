@@ -1,10 +1,10 @@
 creatorpattern.js
 =================
 
-microlib to easily add the creator pattern to your class.
+Micro Library to easily add the creator pattern to your class.
 It works in browser and node.js
 
-## how to use it
+## How To Use It
 
 to mixin the creator pattern in a class ```FooClass`, do the following in node.js
 
@@ -31,7 +31,7 @@ you can do
 var foo	= FooClass.create(2,1);
 ```
 
-## how to include it
+## How To Include It
 
 in node.js
 
@@ -45,10 +45,9 @@ in your browser
  <script src='creatorpattern.js'></script>
 ```
 
-## api
+## API
 
 It includes a single function ```mixinCreatorPattern(constructorFunction, nameOfClass)```
-
 
 ```
 mixinCreatorPattern(FooClass, 'FooClass')
