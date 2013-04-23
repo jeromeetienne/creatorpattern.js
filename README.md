@@ -6,19 +6,30 @@ It works in browser and node.js
 
 ## how to use it
 
-in node.js
+to mixin the creator pattern in a class ```FooClass`, do the following in node.js
 
 ```
 var mixinCreatorPattern = require('creatorpattern');
 mixinCreatorPattern(FooClass, 'FooClass')
 ```
 
-in your browser
+or do the following in your browser
 
 ```
 mixinCreatorPattern(FooClass, 'FooClass')
 ```
 
+After that, ```FooClass``` honor the creator pattern. so instead of
+
+```
+var foo = new FooClass(2,1)
+```
+
+you can do 
+
+```
+var foo	= FooClass.create(2,1);
+```
 
 ## how to include it
 
