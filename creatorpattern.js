@@ -7,14 +7,14 @@
 var mixinCreatorPattern	= function(klass, name){
 	// js code for the creator pattern
 	var jsCode	= [
-		"klass.create = (function() {",
-		"	function F(args) {",
-		"		return klass.apply(this, args);",
-		"	}",
-		"	F.prototype = klass.prototype;",
-		"	return function(){",
-		"		return new F(arguments);",
-		"	}",
+		"klass.create = (function(){",
+			"function F(args) {",
+				"return klass.apply(this, args);",
+			"}",
+			"F.prototype = klass.prototype;",
+			"return function(){",
+				"return new F(arguments);",
+			"}",
 		"})()",
 	].join('\n')
 	// handle klass name default value
